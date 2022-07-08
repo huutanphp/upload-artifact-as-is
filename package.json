@@ -1,0 +1,35 @@
+{
+  "name": "upload-artifact-as-is",
+  "version": "0.0.2",
+  "description": "Upload a build artifact as-is that you can download later",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "release": "ncc build src/upload-artifact-as-is.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyaMisty/upload-artifact-as-is.git"
+  },
+  "keywords": [
+    "Actions",
+    "GitHub",
+    "Artifacts",
+    "Upload"
+  ],
+  "author": "kittaakos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NyaMisty/upload-artifact-as-is/issues"
+  },
+  "homepage": "https://github.com/NyaMisty/upload-artifact-as-is#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@actions/artifact": "*",
+    "@actions/core": "*",
+    "@actions/glob": "*",
+    "@types/node": "^15.0.2",
+    "@vercel/ncc": "^0.28.5",
+    "typescript": "^3.8.3"
+  }
+}
